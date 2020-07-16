@@ -18,14 +18,14 @@ const Navbar = () => {
             <Link to="/" className="nav-link" href="#">Home</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Features</a>
+            <Link to="/MyOrders" className="nav-link" href="#">My Orders</Link>
           </li>
           <li className="nav-item">
             <Link to="/cart" className="nav-link" href="#">Cart</Link>
           </li>
         </ul>
         <span className="navbar-text">
-          Navbar text with an inline element
+         Example React Js cart
     </span>
       </div>
     </nav>

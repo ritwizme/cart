@@ -20,3 +20,11 @@ code {
 .checkoutcart{
   display: contents;
 }
+.myFooter{
+  position: fixed;
+   bottom:0;
+   text-align: center;
+   background: #f6f6f6;
+   width: 100%;
+   height: 10%;
+}

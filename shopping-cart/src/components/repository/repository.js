@@ -6,13 +6,7 @@ export function getProducts() {
                 .then(response => response.data);
 }
 
-export function login (data) {
-    return axios.post(`${BASE_URL}/createOrder`, 
-                      { name: data.idList, password: data.password })
-      .then(response => {
-          console.log(response)
-         })
-  }
+
 
 
 export function getOrders() {

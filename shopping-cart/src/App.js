@@ -7,6 +7,8 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import ProductList from './components/ProductList';
 import Cart2 from './components/Cart2'
+import MyOrders from './components/MyOrders'
+
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
 function App() {
@@ -18,7 +20,9 @@ function App() {
       <Switch>
                     <Route exact path="/" component={Home}/>
                     <Route path="/cart" component={Cart2}/>
+                    <Route path="/MyOrders" component={MyOrders}/>
       </Switch>
+    
       <Footer />
     </div>
     </BrowserRouter>

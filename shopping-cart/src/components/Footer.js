@@ -4,9 +4,11 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer myFooter">
+    
       <div className="container">
-        {/* <span className="text-muted">Example cart</span> */}
+      <br />
+        <b>Demo cart</b>
       </div>
     </footer>
   )
