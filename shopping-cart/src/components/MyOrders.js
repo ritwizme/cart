@@ -11,27 +11,23 @@ const orders = []
 class MyOrders extends Component {
 
 
-
+   
     componentDidMount() {
-
-        getOrders().then((response) => response)
-            .then(response => {
-                orders.push(response)
-            })
-    }
-    render() {
-        
-        let items = orders.map((link) =>
-            <li key={link.orderId}>{link.orderId}</li> 
-        );
-        return (
-          <div className="navigation">
-            <ul>
-             <p>hi</p>
-             {items}
-            </ul>
-          </div>
-        )}
+        fetch(' http://localhost:8080/getOrders')
+          .then(response =>  this.setState({  response }))
+        //   .then(data => this.setState({  data }));
+          console.log(this.state)
+      }
+   render() {
+// const { apiInfo } = this.state;
+// apiInfo && console.log(apiInfo.map(item => item.img));
+return (
+  <div>
+    {/* {apiInfo &&
+      apiInfo.map(item =>  <div> {item.img} </div> )} */}
+  </div>
+);
+}
 }
 
 export default MyOrders;
