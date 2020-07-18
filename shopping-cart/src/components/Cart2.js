@@ -50,6 +50,7 @@ class Cart2 extends Component {
     render() {
 
         let itemList = initState.addedItems.map(product => {
+          console.log(initState.addedItems)
             return (
 
 

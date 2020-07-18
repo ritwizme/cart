@@ -4,6 +4,7 @@ export const initState = {
       
     ],
     addedItems:[],
+    orders:[],
     total: 0
 
 }
